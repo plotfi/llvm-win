@@ -16,7 +16,7 @@ set(MSVC_BASE "${VCToolsInstallDir}")
 set(WINSDK_BASE "${UniversalCRTSdkDir}")
 set(WINSDK_VER "${UCRTVersion}")
 
-configure_file("/root/WindowsSDKVFSOverlay.yaml.in"
+configure_file("${APPLE_SWIFT_CHECKOUT}/utils/WindowsSDKVFSOverlay.yaml.in"
   "${CMAKE_CURRENT_BINARY_DIR}/windows-sdk-vfs-overlay.yaml"
   @ONLY)
 
