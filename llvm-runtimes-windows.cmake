@@ -11,7 +11,7 @@ set(target x86_64-unknown-windows-msvc)
 # Builtins:
 set(BUILTINS_${target}_CMAKE_BUILD_TYPE RelWithDebInfo CACHE STRING "")
 set(BUILTINS_${target}_CMAKE_SYSTEM_NAME Windows CACHE STRING "")
-set(BUILTINS_${target}_CMAKE_TOOLCHAIN_FILE "${LLVM_RUNTIMES_REPO}/Toolchains/Toolchain-Windows-x86_64.cmake" CACHE FILEPATH "")
+set(BUILTINS_${target}_CMAKE_TOOLCHAIN_FILE "${LLVM_WIN_REPO}/Toolchains/Toolchain-Windows-x86_64.cmake" CACHE FILEPATH "")
 set(BUILTINS_${target}_LLVM_ENABLE_PER_TARGET_RUNTIME_DIR NO CACHE BOOL "")
 # Runtimes:
 set(RUNTIMES_${target}_CMAKE_BUILD_TYPE RelWithDebInfo CACHE STRING "")
@@ -26,7 +26,7 @@ set(RUNTIMES_${target}_SANITIZER_CXX_ABI_INTREE ON CACHE BOOL "")
 set(RUNTIMES_${target}_CMAKE_C_FLAGS "" CACHE STRING "")
 set(RUNTIMES_${target}_CMAKE_CXX_FLAGS "" CACHE STRING "")
 set(RUNTIMES_${target}_COMPILER_RT_SANITIZERS_TO_BUILD "asan;cfi;tsan;ubsan_minimal" CACHE STRING "")
-set(RUNTIMES_${target}_CMAKE_TOOLCHAIN_FILE "${LLVM_RUNTIMES_REPO}/Toolchains/Toolchain-Windows-x86_64.cmake" CACHE FILEPATH "")
+set(RUNTIMES_${target}_CMAKE_TOOLCHAIN_FILE "${LLVM_WIN_REPO}/Toolchains/Toolchain-Windows-x86_64.cmake" CACHE FILEPATH "")
 # isystem for xray needs to be added to not break Fuchsia
 set(RUNTIMES_${target}_COMPILER_RT_BUILD_XRAY OFF CACHE BOOL "")
 set(RUNTIMES_${target}_LLVM_ENABLE_RUNTIMES "libcxx;compiler-rt" CACHE STRING "")
