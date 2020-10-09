@@ -1,10 +1,3 @@
-set(LLVM_NATIVE_TOOLCHAIN "/usr")
-set(UCRTVersion 10.0.16299.0)
-set(VCToolsVersion 14.11.25503)
-set(WinSDKRoot "/share/WinSDK")
-set(LLVM_MONOREPO_CHECKOUT "/root/llvm-project")
-set(APPLE_SWIFT_CHECKOUT "/root/swift")
-
 set(UniversalCRTSdkDir "${WinSDKRoot}/Windows/10/SDK")
 set(VCToolsInstallDir "${WinSDKRoot}/Windows/10/MSVC/${VCToolsVersion}")
 
